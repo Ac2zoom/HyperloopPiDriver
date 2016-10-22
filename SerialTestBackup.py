@@ -9,7 +9,7 @@ ser.baudrate = 9600
 print("Serial ser configured.\n")
 print("Beginning serial communication.\n")
 
-tx = "t"
+tx = "test"
 rx = ""
 distance1 = 0 
 distance2 = 0
@@ -50,6 +50,7 @@ while True:
     ser.write(tx)
 
     
+    #print "Sensor1 voltage(digital):", total
     print "Distance1 in cm: ", distance1
     print "Distance2 in cm: ", distance2
     print "Temperature in room (F):", ((total3 * 500 /1024) - 50) * 9/5 + 32  
